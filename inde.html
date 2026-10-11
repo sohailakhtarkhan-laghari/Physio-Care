@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1265a8">
+<title>Physio Care | Physiotherapy Clinic Lahore</title>
+<meta name="description" content="Book a physiotherapy appointment with Physio Care in Lahore.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#30485b;line-height:1.6}
+header{padding:18px 7%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:white;box-shadow:0 2px 12px #0001}
+.logo{font-size:23px;font-weight:bold;color:#1265a8}
+nav{display:flex;align-items:center;gap:14px}
+a{color:#1265a8;text-decoration:none}
+button,.btn{background:#1265a8;color:white;padding:12px 18px;border:0;border-radius:8px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block}
+.hero{padding:65px 8%;background:#f0f7fc;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+h1{font-size:clamp(36px,5vw,54px);line-height:1.15;color:#163e5c}
+h2{color:#163e5c}
+.hero img{width:100%;border-radius:16px}
+section{padding:48px 8%}
+.center{text-align:center}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card,.formbox{padding:20px;border:1px solid #dce8f0;border-radius:12px;background:white}
+#appointment{background:#f0f7fc}
+.formbox{max-width:620px;margin:auto}
+label{display:block;margin:12px 0 5px;font-weight:bold}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd8e2;border-radius:7px;font:inherit;background:white}
+.formbox button{width:100%;margin-top:18px}
+footer{background:#163e5c;color:white;text-align:center;padding:28px}
+footer a{color:white}
+@media(max-width:650px){
+header{padding:14px 5%;flex-wrap:wrap}
+nav{gap:10px;font-size:14px}
+.hero{grid-template-columns:1fr;padding:38px 6%}
+section{padding:38px 6%}
+.services{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">✚ Physio Care</div>
+<nav>
+<a href="#services" data-en="Services" data-ur="سروسز">Services</a>
+<a href="#appointment" data-en="Book" data-ur="بکنگ">Book</a>
+<button type="button" onclick="toggleLanguage()" id="langBtn">اردو</button>
+</nav>
+</header>
+
+<main>
+<div class="hero">
+<div>
+<p data-en="YOUR MOVEMENT. YOUR RECOVERY." data-ur="آپ کی حرکت، آپ کی صحت یابی۔">YOUR MOVEMENT. YOUR RECOVERY.</p>
+<h1 data-en="Move Better. Live Better." data-ur="بہتر حرکت، بہتر زندگی۔">Move Better. Live Better.</h1>
+<p data-en="Professional physiotherapy care to support your mobility, strength and recovery in Lahore." data-ur="لاہور میں آپ کی حرکت، طاقت اور صحت یابی کے لیے فزیوتھراپی کی سہولت۔">Professional physiotherapy care to support your mobility, strength and recovery in Lahore.</p>
+<a class="btn" href="#appointment" data-en="Book an Appointment" data-ur="اپائنٹمنٹ بک کریں">Book an Appointment</a>
+</div>
+<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Healthcare professional">
+</div>
+
+<section id="services">
+<h2 class="center" data-en="Our Physiotherapy Services" data-ur="ہماری فزیوتھراپی سروسز">Our Physiotherapy Services</h2>
+<div class="services">
+<div class="card"><h3 data-en="Back & Neck Pain" data-ur="کمر اور گردن کا درد">Back & Neck Pain</h3><p data-en="Assessment and personalized rehabilitation." data-ur="معائنہ اور انفرادی بحالی کی سہولت۔">Assessment and personalized rehabilitation.</p></div>
+<div class="card"><h3 data-en="Sports Injuries" data-ur="کھیلوں کی چوٹیں">Sports Injuries</h3><p data-en="Rehabilitation to restore movement." data-ur="حرکت کی بحالی کے لیے فزیوتھراپی۔">Rehabilitation to restore movement.</p></div>
+<div class="card"><h3 data-en="Joint & Knee Pain" data-ur="جوڑوں اور گھٹنوں کا درد">Joint & Knee Pain</h3><p data-en="Support for strength and mobility." data-ur="طاقت اور حرکت بہتر بنانے میں مدد۔">Support for strength and mobility.</p></div>
+<div class="card"><h3 data-en="Post-Surgery Rehab" data-ur="آپریشن کے بعد بحالی">Post-Surgery Rehab</h3><p data-en="Recovery plans tailored to your needs." data-ur="ضرورت کے مطابق بحالی کا منصوبہ۔">Recovery plans tailored to your needs.</p></div>
+</div>
+</section>
+
+<section id="appointment">
+<h2 class="center" data-en="Book Your Appointment" data-ur="اپنی اپائنٹمنٹ بک کریں">Book Your Appointment</h2>
+<p class="center" data-en="Send an appointment request directly to our WhatsApp." data-ur="واٹس ایپ پر اپائنٹمنٹ کی درخواست بھیجیں۔">Send an appointment request directly to our WhatsApp.</p>
+<form class="formbox" id="bookingForm">
+<label for="name" data-en="Patient Name" data-ur="مریض کا نام">Patient Name</label>
+<input id="name" required maxlength="100" placeholder="Full name">
+<label for="phone" data-en="Your Phone Number" data-ur="آپ کا فون نمبر">Your Phone Number</label>
+<input id="phone" type="tel" required placeholder="03XXXXXXXXX">
+<label for="service" data-en="Select Service" data-ur="سروس منتخب کریں">Select Service</label>
+<select id="service">
+<option>Back or neck pain</option><option>Sports injury</option><option>Joint or knee pain</option><option>Post-surgery rehabilitation</option><option>Other</option>
+</select>
+<label for="date" data-en="Preferred Date" data-ur="پسندیدہ تاریخ">Preferred Date</label>
+<input id="date" type="date" required>
+<label for="time" data-en="Preferred Time" data-ur="پسندیدہ وقت">Preferred Time</label>
+<select id="time"><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>03:00 PM</option><option>04:00 PM</option><option>05:00 PM</option></select>
+<label for="notes" data-en="Additional Notes (Optional)" data-ur="مزید تفصیل (اختیاری)">Additional Notes (Optional)</label>
+<textarea id="notes" rows="3" maxlength="500"></textarea>
+<button type="submit" data-en="Book via WhatsApp" data-ur="واٹس ایپ پر بک کریں">Book via WhatsApp</button>
+<p id="status" role="status"></p>
+</form>
+</section>
+</main>
+
+<footer>
+<h3>Physio Care Physiotherapy Clinic</h3>
+<p>Lahore, Pakistan</p>
+<p>Appointments are requests and require clinic confirmation.</p>
+<p>© <span id="year"></span> Physio Care</p>
+</footer>
+
+<script>
+const CLINIC_WHATSAPP = "923263952499";
+let language = "en";
+const dateInput = document.getElementById("date");
+const now = new Date();
+dateInput.min = [now.getFullYear(),String(now.getMonth()+1).padStart(2,"0"),String(now.getDate()).padStart(2,"0")].join("-");
+document.getElementById("year").textContent = now.getFullYear();
+
+function toggleLanguage(){
+language = language === "en" ? "ur" : "en";
+document.documentElement.lang = language;
+document.querySelectorAll("[data-en]").forEach(el => {
+el.textContent = el.dataset[language];
+});
+document.getElementById("langBtn").textContent = language === "en" ? "اردو" : "English";
+}
+
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+e.preventDefault();
+if(!this.reportValidity()) return;
+const name = document.getElementById("name").value.trim();
+const phone = document.getElementById("phone").value.trim();
+const service = document.getElementById("service").value;
+const date = document.getElementById("date").value;
+const time = document.getElementById("time").value;
+const notes = document.getElementById("notes").value.trim();
+const message = [
+"Physio Care — Appointment Request",
+"Patient: "+name,
+"Phone: "+phone,
+"Service: "+service,
+"Preferred date: "+date,
+"Preferred time: "+time,
+"Notes: "+(notes || "None"),
+"Please confirm availability."
+].join("\n");
+const url = "https://wa.me/"+CLINIC_WHATSAPP+"?text="+encodeURIComponent(message);
+window.open(url,"_blank","noopener,noreferrer");
+document.getElementById("status").textContent = "Please send the prepared WhatsApp message to submit your request.";
+});
+</script>
+</body>
+</html>
